@@ -63,6 +63,7 @@ func (v *Vpnsecure) BuildConf(connection models.Connection,
 
 	lines = append(lines, utils.WrapOpenvpnCA(constants.VpnsecureCA)...)
 	lines = append(lines, utils.WrapOpenvpnCert(constants.VpnsecureCert)...)
+	lines = append(lines, utils.WrapOpenvpnEncryptedKey(constants.VpnsecureEncKey)...)
 
 	lines = append(lines, "")
 

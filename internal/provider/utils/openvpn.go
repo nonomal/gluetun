@@ -40,6 +40,16 @@ func WrapOpenvpnKey(clientKey string) (lines []string) {
 	}
 }
 
+func WrapOpenvpnEncryptedKey(encryptedKey string) (lines []string) {
+	return []string{
+		"<key>",
+		"-----BEGIN ENCRYPTED PRIVATE KEY-----",
+		encryptedKey,
+		"-----END ENCRYPTED PRIVATE KEY-----",
+		"</key>",
+	}
+}
+
 func WrapOpenvpnRSAKey(rsaPrivateKey string) (lines []string) {
 	return []string{
 		"<key>",
