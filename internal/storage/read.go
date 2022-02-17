@@ -54,7 +54,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Cyberghost.Version != versions.Cyberghost.Version {
 		s.logVersionDiff("Cyberghost", hardcoded.Cyberghost.Version, versions.Cyberghost.Version)
-	} else {
+	} else if len(rawMessages.Cyberghost) > 0 {
 		err = json.Unmarshal(rawMessages.Cyberghost, &servers.Cyberghost)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Cyberghost", err)
@@ -63,7 +63,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Expressvpn.Version != versions.Expressvpn.Version {
 		s.logVersionDiff("Expressvpn", hardcoded.Expressvpn.Version, versions.Expressvpn.Version)
-	} else {
+	} else if len(rawMessages.Expressvpn) > 0 {
 		err = json.Unmarshal(rawMessages.Expressvpn, &servers.Expressvpn)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Expressvpn", err)
@@ -72,7 +72,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Fastestvpn.Version != versions.Fastestvpn.Version {
 		s.logVersionDiff("Fastestvpn", hardcoded.Fastestvpn.Version, versions.Fastestvpn.Version)
-	} else {
+	} else if len(rawMessages.Fastestvpn) > 0 {
 		err = json.Unmarshal(rawMessages.Fastestvpn, &servers.Fastestvpn)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Fastestvpn", err)
@@ -81,7 +81,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.HideMyAss.Version != versions.HideMyAss.Version {
 		s.logVersionDiff("HideMyAss", hardcoded.HideMyAss.Version, versions.HideMyAss.Version)
-	} else {
+	} else if len(rawMessages.HideMyAss) > 0 {
 		err = json.Unmarshal(rawMessages.HideMyAss, &servers.HideMyAss)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "HideMyAss", err)
@@ -90,7 +90,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Ipvanish.Version != versions.Ipvanish.Version {
 		s.logVersionDiff("Ipvanish", hardcoded.Ipvanish.Version, versions.Ipvanish.Version)
-	} else {
+	} else if len(rawMessages.Ipvanish) > 0 {
 		err = json.Unmarshal(rawMessages.Ipvanish, &servers.Ipvanish)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Ipvanish", err)
@@ -99,7 +99,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Ivpn.Version != versions.Ivpn.Version {
 		s.logVersionDiff("Ivpn", hardcoded.Ivpn.Version, versions.Ivpn.Version)
-	} else {
+	} else if len(rawMessages.Ivpn) > 0 {
 		err = json.Unmarshal(rawMessages.Ivpn, &servers.Ivpn)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Ivpn", err)
@@ -108,7 +108,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Mullvad.Version != versions.Mullvad.Version {
 		s.logVersionDiff("Mullvad", hardcoded.Mullvad.Version, versions.Mullvad.Version)
-	} else {
+	} else if len(rawMessages.Mullvad) > 0 {
 		err = json.Unmarshal(rawMessages.Mullvad, &servers.Mullvad)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Mullvad", err)
@@ -117,7 +117,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Nordvpn.Version != versions.Nordvpn.Version {
 		s.logVersionDiff("Nordvpn", hardcoded.Nordvpn.Version, versions.Nordvpn.Version)
-	} else {
+	} else if len(rawMessages.Nordvpn) > 0 {
 		err = json.Unmarshal(rawMessages.Nordvpn, &servers.Nordvpn)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Nordvpn", err)
@@ -126,7 +126,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Perfectprivacy.Version != versions.Perfectprivacy.Version {
 		s.logVersionDiff("Perfect Privacy", hardcoded.Perfectprivacy.Version, versions.Perfectprivacy.Version)
-	} else {
+	} else if len(rawMessages.Perfectprivacy) > 0 {
 		err = json.Unmarshal(rawMessages.Perfectprivacy, &servers.Perfectprivacy)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Perfect Privacy", err)
@@ -135,7 +135,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Privado.Version != versions.Privado.Version {
 		s.logVersionDiff("Privado", hardcoded.Privado.Version, versions.Privado.Version)
-	} else {
+	} else if len(rawMessages.Privado) > 0 {
 		err = json.Unmarshal(rawMessages.Privado, &servers.Privado)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Privado", err)
@@ -144,7 +144,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Pia.Version != versions.Pia.Version {
 		s.logVersionDiff("Pia", hardcoded.Pia.Version, versions.Pia.Version)
-	} else {
+	} else if len(rawMessages.Pia) > 0 {
 		err = json.Unmarshal(rawMessages.Pia, &servers.Pia)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Pia", err)
@@ -153,7 +153,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Privatevpn.Version != versions.Privatevpn.Version {
 		s.logVersionDiff("Privatevpn", hardcoded.Privatevpn.Version, versions.Privatevpn.Version)
-	} else {
+	} else if len(rawMessages.Privatevpn) > 0 {
 		err = json.Unmarshal(rawMessages.Privatevpn, &servers.Privatevpn)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Privatevpn", err)
@@ -162,7 +162,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Protonvpn.Version != versions.Protonvpn.Version {
 		s.logVersionDiff("Protonvpn", hardcoded.Protonvpn.Version, versions.Protonvpn.Version)
-	} else {
+	} else if len(rawMessages.Protonvpn) > 0 {
 		err = json.Unmarshal(rawMessages.Protonvpn, &servers.Protonvpn)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Protonvpn", err)
@@ -171,7 +171,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Purevpn.Version != versions.Purevpn.Version {
 		s.logVersionDiff("Purevpn", hardcoded.Purevpn.Version, versions.Purevpn.Version)
-	} else {
+	} else if len(rawMessages.Purevpn) > 0 {
 		err = json.Unmarshal(rawMessages.Purevpn, &servers.Purevpn)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Purevpn", err)
@@ -180,7 +180,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Surfshark.Version != versions.Surfshark.Version {
 		s.logVersionDiff("Surfshark", hardcoded.Surfshark.Version, versions.Surfshark.Version)
-	} else {
+	} else if len(rawMessages.Surfshark) > 0 {
 		err = json.Unmarshal(rawMessages.Surfshark, &servers.Surfshark)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Surfshark", err)
@@ -189,7 +189,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Torguard.Version != versions.Torguard.Version {
 		s.logVersionDiff("Torguard", hardcoded.Torguard.Version, versions.Torguard.Version)
-	} else {
+	} else if len(rawMessages.Torguard) > 0 {
 		err = json.Unmarshal(rawMessages.Torguard, &servers.Torguard)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Torguard", err)
@@ -198,7 +198,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.VPNUnlimited.Version != versions.VPNUnlimited.Version {
 		s.logVersionDiff("VPNUnlimited", hardcoded.VPNUnlimited.Version, versions.VPNUnlimited.Version)
-	} else {
+	} else if len(rawMessages.VPNUnlimited) > 0 {
 		err = json.Unmarshal(rawMessages.VPNUnlimited, &servers.VPNUnlimited)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "VPNUnlimited", err)
@@ -207,7 +207,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Vyprvpn.Version != versions.Vyprvpn.Version {
 		s.logVersionDiff("Vyprvpn", hardcoded.Vyprvpn.Version, versions.Vyprvpn.Version)
-	} else {
+	} else if len(rawMessages.Vyprvpn) > 0 {
 		err = json.Unmarshal(rawMessages.Vyprvpn, &servers.Vyprvpn)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Vyprvpn", err)
@@ -216,7 +216,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Wevpn.Version != versions.Wevpn.Version {
 		s.logVersionDiff("Wevpn", hardcoded.Wevpn.Version, versions.Wevpn.Version)
-	} else {
+	} else if len(rawMessages.Wevpn) > 0 {
 		err = json.Unmarshal(rawMessages.Wevpn, &servers.Wevpn)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Wevpn", err)
@@ -225,7 +225,7 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 
 	if hardcoded.Windscribe.Version != versions.Windscribe.Version {
 		s.logVersionDiff("Windscribe", hardcoded.Windscribe.Version, versions.Windscribe.Version)
-	} else {
+	} else if len(rawMessages.Windscribe) > 0 {
 		err = json.Unmarshal(rawMessages.Windscribe, &servers.Windscribe)
 		if err != nil {
 			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "Windscribe", err)
