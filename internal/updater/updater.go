@@ -104,6 +104,8 @@ func (u *updater) getUpdateFunction(provider string) (updateFunction updateFunc)
 		return func(ctx context.Context) (err error) { return u.updateSurfshark(ctx) }
 	case constants.Torguard:
 		return func(ctx context.Context) (err error) { return u.updateTorguard(ctx) }
+	case constants.Vpnsecure:
+		return func(ctx context.Context) (err error) { return u.updateVpnsecure(ctx) }
 	case constants.VPNUnlimited:
 		return func(ctx context.Context) (err error) { return u.updateVPNUnlimited(ctx) }
 	case constants.Vyprvpn:

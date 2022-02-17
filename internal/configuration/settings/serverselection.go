@@ -232,6 +232,11 @@ func getLocationFilterChoices(vpnServiceProvider string, ss *ServerSelection,
 		countryChoices = validation.TorguardCountryChoices(servers)
 		cityChoices = validation.TorguardCityChoices(servers)
 		hostnameChoices = validation.TorguardHostnameChoices(servers)
+	case constants.Vpnsecure:
+		servers := allServers.GetVpnsecure()
+		regionChoices = validation.VpnsecureRegionChoices(servers)
+		cityChoices = validation.VpnsecureCityChoices(servers)
+		hostnameChoices = validation.VpnsecureHostnameChoices(servers)
 	case constants.VPNUnlimited:
 		servers := allServers.GetVPNUnlimited()
 		countryChoices = validation.VPNUnlimitedCountryChoices(servers)

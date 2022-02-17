@@ -153,6 +153,14 @@ type TorguardServer struct {
 	IPs      []net.IP `json:"ips,omitempty"`
 }
 
+type VpnsecureServer struct {
+	Region   string   `json:"region"`
+	City     string   `json:"city"`
+	Hostname string   `json:"hostname"`
+	Premium  bool     `json:"premium"`
+	IPs      []net.IP `json:"ips"`
+}
+
 type VPNUnlimitedServer struct {
 	Country  string   `json:"country,omitempty"`
 	City     string   `json:"city,omitempty"`

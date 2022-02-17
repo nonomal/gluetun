@@ -22,6 +22,7 @@ import (
 	"github.com/qdm12/gluetun/internal/updater/providers/purevpn"
 	"github.com/qdm12/gluetun/internal/updater/providers/surfshark"
 	"github.com/qdm12/gluetun/internal/updater/providers/torguard"
+	"github.com/qdm12/gluetun/internal/updater/providers/vpnsecure"
 	"github.com/qdm12/gluetun/internal/updater/providers/vpnunlimited"
 	"github.com/qdm12/gluetun/internal/updater/providers/vyprvpn"
 	"github.com/qdm12/gluetun/internal/updater/providers/wevpn"
@@ -356,6 +357,28 @@ func (u *updater) updateTorguard(ctx context.Context) (err error) {
 
 	u.servers.Torguard.Timestamp = u.timeNow().Unix()
 	u.servers.Torguard.Servers = servers
+	return nil
+}
+
+func (u *updater) updateVpnsecure(ctx context.Context) (err error) {
+	minServers := getMinServers(len(u.servers.Vpnsecure.Servers))
+	servers, warnings, err := vpnsecure.GetServers(
+		ctx, u.client, u.presolver, minServers)
+	if *u.options.CLI {
+		for _, warning := range warnings {
+			u.logger.Warn("VPN Secure: " + warning)
+		}
+	}
+	if err != nil {
+		return err
+	}
+
+	if reflect.DeepEqual(u.servers.Vpnsecure.Servers, servers) {
+		return nil
+	}
+
+	u.servers.Vpnsecure.Timestamp = u.timeNow().Unix()
+	u.servers.Vpnsecure.Servers = servers
 	return nil
 }
 

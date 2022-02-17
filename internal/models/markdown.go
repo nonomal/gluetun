@@ -237,6 +237,19 @@ func (s *TorguardServer) ToMarkdown() (markdown string) {
 		boolToMarkdown(s.TCP), boolToMarkdown(s.UDP))
 }
 
+func (s *VpnsecureServers) ToMarkdown() (markdown string) {
+	markdown = markdownTableHeading("Country", "City", "Hostname", "Premium")
+	for _, server := range s.Servers {
+		markdown += server.ToMarkdown() + "\n"
+	}
+	return markdown
+}
+
+func (s *VpnsecureServer) ToMarkdown() (markdown string) {
+	return fmt.Sprintf("| %s | %s | `%s` | %s |",
+		s.Region, s.City, s.Hostname, boolToMarkdown(s.Premium))
+}
+
 func (s *VPNUnlimitedServers) ToMarkdown() (markdown string) {
 	markdown = markdownTableHeading("Country", "City", "Hostname", "Free tier", "Streaming", "TCP", "UDP")
 	for _, server := range s.Servers {

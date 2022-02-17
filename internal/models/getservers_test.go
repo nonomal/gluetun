@@ -92,6 +92,11 @@ func Test_AllServers_GetCopy(t *testing.T) {
 				IPs: []net.IP{{1, 2, 3, 4}},
 			}},
 		},
+		Vpnsecure: VpnsecureServers{
+			Servers: []VpnsecureServer{{
+				IPs: []net.IP{{1, 2, 3, 4}},
+			}},
+		},
 		VPNUnlimited: VPNUnlimitedServers{
 			Servers: []VPNUnlimitedServer{{
 				IPs: []net.IP{{1, 2, 3, 4}},

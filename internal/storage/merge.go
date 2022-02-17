@@ -45,6 +45,7 @@ func (s *Storage) mergeServers(hardcoded, persisted models.AllServers) models.Al
 		Purevpn:        s.mergePureVPN(hardcoded.Purevpn, persisted.Purevpn),
 		Surfshark:      s.mergeSurfshark(hardcoded.Surfshark, persisted.Surfshark),
 		Torguard:       s.mergeTorguard(hardcoded.Torguard, persisted.Torguard),
+		Vpnsecure:      s.mergeVpnsecure(hardcoded.Vpnsecure, persisted.Vpnsecure),
 		VPNUnlimited:   s.mergeVPNUnlimited(hardcoded.VPNUnlimited, persisted.VPNUnlimited),
 		Vyprvpn:        s.mergeVyprvpn(hardcoded.Vyprvpn, persisted.Vyprvpn),
 		Wevpn:          s.mergeWevpn(hardcoded.Wevpn, persisted.Wevpn),
@@ -193,6 +194,15 @@ func (s *Storage) mergeTorguard(hardcoded, persisted models.TorguardServers) mod
 	}
 
 	s.logTimeDiff("Torguard", persisted.Timestamp, hardcoded.Timestamp)
+	return persisted
+}
+
+func (s *Storage) mergeVpnsecure(hardcoded, persisted models.VpnsecureServers) models.VpnsecureServers {
+	if persisted.Timestamp <= hardcoded.Timestamp {
+		return hardcoded
+	}
+
+	s.logTimeDiff("VPN secure", persisted.Timestamp, hardcoded.Timestamp)
 	return persisted
 }
 

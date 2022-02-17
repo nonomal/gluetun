@@ -29,6 +29,7 @@ import (
 	"github.com/qdm12/gluetun/internal/provider/surfshark"
 	"github.com/qdm12/gluetun/internal/provider/torguard"
 	"github.com/qdm12/gluetun/internal/provider/utils"
+	"github.com/qdm12/gluetun/internal/provider/vpnsecure"
 	"github.com/qdm12/gluetun/internal/provider/vpnunlimited"
 	"github.com/qdm12/gluetun/internal/provider/vyprvpn"
 	"github.com/qdm12/gluetun/internal/provider/wevpn"
@@ -87,6 +88,8 @@ func New(provider string, allServers models.AllServers, timeNow func() time.Time
 		return surfshark.New(allServers.Surfshark.Servers, randSource)
 	case constants.Torguard:
 		return torguard.New(allServers.Torguard.Servers, randSource)
+	case constants.Vpnsecure:
+		return vpnsecure.New(allServers.Vpnsecure.Servers, randSource)
 	case constants.VPNUnlimited:
 		return vpnunlimited.New(allServers.VPNUnlimited.Servers, randSource)
 	case constants.Vyprvpn:

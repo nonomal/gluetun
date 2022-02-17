@@ -19,6 +19,7 @@ func AllProviders() []string {
 		Purevpn,
 		Surfshark,
 		Torguard,
+		Vpnsecure,
 		VPNUnlimited,
 		Vyprvpn,
 		Wevpn,

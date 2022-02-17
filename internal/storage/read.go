@@ -196,6 +196,15 @@ func (s *Storage) extractServersFromBytes(b []byte, hardcoded models.AllServers)
 		}
 	}
 
+	if hardcoded.Vpnsecure.Version != versions.Vpnsecure.Version {
+		s.logVersionDiff("VPN Secure", hardcoded.Vpnsecure.Version, versions.Vpnsecure.Version)
+	} else if len(rawMessages.Vpnsecure) > 0 {
+		err = json.Unmarshal(rawMessages.Vpnsecure, &servers.Vpnsecure)
+		if err != nil {
+			return servers, fmt.Errorf("%w: %s: %s", errDecodeProvider, "VPN Secure", err)
+		}
+	}
+
 	if hardcoded.VPNUnlimited.Version != versions.VPNUnlimited.Version {
 		s.logVersionDiff("VPNUnlimited", hardcoded.VPNUnlimited.Version, versions.VPNUnlimited.Version)
 	} else if len(rawMessages.VPNUnlimited) > 0 {
@@ -255,6 +264,7 @@ type allVersions struct {
 	Purevpn        serverVersion `json:"purevpn"`
 	Surfshark      serverVersion `json:"surfshark"`
 	Torguard       serverVersion `json:"torguard"`
+	Vpnsecure      serverVersion `json:"vpnsecure"`
 	VPNUnlimited   serverVersion `json:"vpnunlimited"`
 	Vyprvpn        serverVersion `json:"vyprvpn"`
 	Wevpn          serverVersion `json:"wevpn"`
@@ -284,6 +294,7 @@ type allJSONRawMessages struct {
 	Purevpn        json.RawMessage `json:"purevpn"`
 	Surfshark      json.RawMessage `json:"surfshark"`
 	Torguard       json.RawMessage `json:"torguard"`
+	Vpnsecure      json.RawMessage `json:"vpnsecure"`
 	VPNUnlimited   json.RawMessage `json:"vpnunlimited"`
 	Vyprvpn        json.RawMessage `json:"vyprvpn"`
 	Wevpn          json.RawMessage `json:"wevpn"`

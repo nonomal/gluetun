@@ -95097,6 +95097,707 @@
       }
     ]
   },
+  "vpnsecure": {
+    "version": 1,
+    "timestamp": 1644982632,
+    "servers": [
+      {
+        "region": "Auckland",
+        "city": "Auckland",
+        "hostname": "nz1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "185.121.168.31"
+        ]
+      },
+      {
+        "region": "Brent",
+        "city": "Harlesden",
+        "hostname": "uk6.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "45.141.154.190"
+        ]
+      },
+      {
+        "region": "Brussels Hoofdstedelijk Gewest",
+        "city": "Brussel",
+        "hostname": "be2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "37.120.236.166"
+        ]
+      },
+      {
+        "region": "Bucure?ti",
+        "city": "Bucharest",
+        "hostname": "ro1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "5.252.178.107"
+        ]
+      },
+      {
+        "region": "Bucure?ti",
+        "city": "Bucharest",
+        "hostname": "ro2.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "37.120.247.47",
+          "194.68.44.77"
+        ]
+      },
+      {
+        "region": "Budapest",
+        "city": "Budapest",
+        "hostname": "hu1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "194.71.130.93"
+        ]
+      },
+      {
+        "region": "California",
+        "city": "Los Angeles",
+        "hostname": "us11.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.81.147.10"
+        ]
+      },
+      {
+        "region": "California",
+        "city": "Los Angeles",
+        "hostname": "us13.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "103.214.108.211"
+        ]
+      },
+      {
+        "region": "California",
+        "city": "Los Angeles",
+        "hostname": "us14.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "216.105.168.179"
+        ]
+      },
+      {
+        "region": "California",
+        "city": "Los Angeles",
+        "hostname": "us15.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.81.147.10"
+        ]
+      },
+      {
+        "region": "California",
+        "city": "Los Angeles",
+        "hostname": "us5.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.81.147.10"
+        ]
+      },
+      {
+        "region": "California",
+        "city": "Los Angeles",
+        "hostname": "us6.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "216.105.168.178"
+        ]
+      },
+      {
+        "region": "Capital Region",
+        "city": "Ballerup",
+        "hostname": "dk3.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "37.120.145.132"
+        ]
+      },
+      {
+        "region": "Capital Region",
+        "city": "Copenhagen",
+        "hostname": "dk1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "192.36.27.55"
+        ]
+      },
+      {
+        "region": "Capital Region",
+        "city": "Copenhagen",
+        "hostname": "dk2.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "192.36.27.61"
+        ]
+      },
+      {
+        "region": "Central and Western",
+        "city": "Hong Kong",
+        "hostname": "hk1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "103.253.43.30"
+        ]
+      },
+      {
+        "region": "Dublin City",
+        "city": "Dublin",
+        "hostname": "ie1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "185.224.197.60"
+        ]
+      },
+      {
+        "region": "England",
+        "city": "Kent",
+        "hostname": "uk3.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "185.62.86.143"
+        ]
+      },
+      {
+        "region": "England",
+        "city": "London",
+        "hostname": "uk2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.195.221.43"
+        ]
+      },
+      {
+        "region": "England",
+        "city": "London",
+        "hostname": "uk4.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "185.62.86.142"
+        ]
+      },
+      {
+        "region": "England",
+        "city": "London",
+        "hostname": "uk5.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "45.141.154.190",
+          "46.17.63.208"
+        ]
+      },
+      {
+        "region": "England",
+        "city": "Manchester",
+        "hostname": "uk7.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "77.243.187.81"
+        ]
+      },
+      {
+        "region": "Flanders",
+        "city": "Zaventem",
+        "hostname": "be1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "37.120.236.166"
+        ]
+      },
+      {
+        "region": "Geneva",
+        "city": "Geneva",
+        "hostname": "ch1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "45.90.57.209"
+        ]
+      },
+      {
+        "region": "Geneva",
+        "city": "Genève",
+        "hostname": "ch2.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "45.90.58.5"
+        ]
+      },
+      {
+        "region": "Georgia",
+        "city": "Atlanta",
+        "hostname": "us8.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "64.42.181.50"
+        ]
+      },
+      {
+        "region": "Georgia",
+        "city": "Atlanta",
+        "hostname": "us9.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "64.42.181.51"
+        ]
+      },
+      {
+        "region": "Grand Est",
+        "city": "Strasbourg",
+        "hostname": "fr3.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "151.80.148.41"
+        ]
+      },
+      {
+        "region": "Grand Est",
+        "city": "Strasbourg",
+        "hostname": "fr4.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "151.80.148.150"
+        ]
+      },
+      {
+        "region": "Hesse",
+        "city": "Frankfurt am Main",
+        "hostname": "de1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "135.125.201.229"
+        ]
+      },
+      {
+        "region": "Hesse",
+        "city": "Frankfurt am Main",
+        "hostname": "de2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.195.113.80"
+        ]
+      },
+      {
+        "region": "Hesse",
+        "city": "Frankfurt am Main",
+        "hostname": "de3.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.195.113.82"
+        ]
+      },
+      {
+        "region": "Hesse",
+        "city": "Frankfurt am Main",
+        "hostname": "de4.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.195.37.144"
+        ]
+      },
+      {
+        "region": "Hesse",
+        "city": "Frankfurt am Main",
+        "hostname": "de6.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.195.37.144"
+        ]
+      },
+      {
+        "region": "Hesse",
+        "city": "Limburg an der Lahn",
+        "hostname": "de5.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "135.125.183.212"
+        ]
+      },
+      {
+        "region": "Illinois",
+        "city": "Chicago",
+        "hostname": "us12.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "64.42.183.139"
+        ]
+      },
+      {
+        "region": "Illinois",
+        "city": "Chicago",
+        "hostname": "us16.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "66.23.205.83"
+        ]
+      },
+      {
+        "region": "Illinois",
+        "city": "Chicago",
+        "hostname": "us4.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.81.203.33"
+        ]
+      },
+      {
+        "region": "Illinois",
+        "city": "Chicago",
+        "hostname": "us7.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "64.42.183.138"
+        ]
+      },
+      {
+        "region": "Karnataka",
+        "city": "Doddaballapura",
+        "hostname": "in1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "142.93.222.157"
+        ]
+      },
+      {
+        "region": "Lombardy",
+        "city": "Milan",
+        "hostname": "it1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "149.154.157.94"
+        ]
+      },
+      {
+        "region": "Madrid",
+        "city": "Madrid",
+        "hostname": "es2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "5.188.188.134"
+        ]
+      },
+      {
+        "region": "Maharashtra",
+        "city": "Mumbai",
+        "hostname": "ae1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "103.57.251.73"
+        ]
+      },
+      {
+        "region": "Mazovia",
+        "city": "Warsaw",
+        "hostname": "pl1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "89.207.169.53"
+        ]
+      },
+      {
+        "region": "Moscow",
+        "city": "Moscow",
+        "hostname": "ru1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "213.183.56.97"
+        ]
+      },
+      {
+        "region": "México",
+        "city": "Ampliación San Mateo (Colonia Solidaridad)",
+        "hostname": "mx1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "190.103.179.17"
+        ]
+      },
+      {
+        "region": "New Jersey",
+        "city": "Secaucus",
+        "hostname": "us1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "135.148.100.25"
+        ]
+      },
+      {
+        "region": "New South Wales",
+        "city": "Sydney",
+        "hostname": "au2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "139.99.131.191"
+        ]
+      },
+      {
+        "region": "New South Wales",
+        "city": "Sydney",
+        "hostname": "au3.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "37.120.234.22"
+        ]
+      },
+      {
+        "region": "New South Wales",
+        "city": "Sydney",
+        "hostname": "au4.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "217.138.205.151"
+        ]
+      },
+      {
+        "region": "New York",
+        "city": "New York City",
+        "hostname": "us10.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "135.148.152.130"
+        ]
+      },
+      {
+        "region": "New York",
+        "city": "New York City",
+        "hostname": "us2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "135.148.27.95"
+        ]
+      },
+      {
+        "region": "North Holland",
+        "city": "Haarlem",
+        "hostname": "nl1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "185.117.91.157"
+        ]
+      },
+      {
+        "region": "Ontario",
+        "city": "Richmond Hill",
+        "hostname": "ca1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "149.56.46.132"
+        ]
+      },
+      {
+        "region": "Ontario",
+        "city": "Richmond Hill",
+        "hostname": "ca2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "51.222.50.187"
+        ]
+      },
+      {
+        "region": "Oregon",
+        "city": "Portland",
+        "hostname": "us3.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "51.81.208.46"
+        ]
+      },
+      {
+        "region": "Oslo",
+        "city": "Oslo",
+        "hostname": "no1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "194.68.32.36"
+        ]
+      },
+      {
+        "region": "Poltavs\u0026#039;ka Oblast\u0026#039;",
+        "city": "Kremenchuk",
+        "hostname": "ua1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "139.28.36.34"
+        ]
+      },
+      {
+        "region": "Quebec",
+        "city": "Montréal",
+        "hostname": "ca3.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "67.43.234.50"
+        ]
+      },
+      {
+        "region": "Queensland",
+        "city": "Brisbane",
+        "hostname": "au1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "51.161.157.216"
+        ]
+      },
+      {
+        "region": "Sao Paulo",
+        "city": "Sao Paulo",
+        "hostname": "br1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "154.16.57.215"
+        ]
+      },
+      {
+        "region": "Singapore",
+        "city": "Singapore",
+        "hostname": "sg1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "139.99.57.42"
+        ]
+      },
+      {
+        "region": "Sofia-Capital",
+        "city": "Sofia",
+        "hostname": "bg1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "194.68.225.20"
+        ]
+      },
+      {
+        "region": "Sofia-Capital",
+        "city": "Sofia",
+        "hostname": "bg2.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "194.68.225.20"
+        ]
+      },
+      {
+        "region": "South Holland",
+        "city": "Naaldwijk",
+        "hostname": "nl2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "212.83.133.203"
+        ]
+      },
+      {
+        "region": "Special Capital Region of Jakarta",
+        "city": "Jakarta",
+        "hostname": "id1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "45.114.118.84"
+        ]
+      },
+      {
+        "region": "Stockholm",
+        "city": "Stockholm",
+        "hostname": "no2.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "194.68.32.36"
+        ]
+      },
+      {
+        "region": "Stockholm",
+        "city": "Stockholm",
+        "hostname": "se2.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "178.73.210.95"
+        ]
+      },
+      {
+        "region": "Stockholm",
+        "city": "Stockholm",
+        "hostname": "se3.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "185.117.89.229"
+        ]
+      },
+      {
+        "region": "Tel Aviv",
+        "city": "Tel Aviv",
+        "hostname": "il1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "193.182.144.18"
+        ]
+      },
+      {
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "hostname": "jp1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "109.169.63.18"
+        ]
+      },
+      {
+        "region": "Tokyo",
+        "city": "Tokyo",
+        "hostname": "jp2.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "194.68.27.45"
+        ]
+      },
+      {
+        "region": "Vienna",
+        "city": "Vienna",
+        "hostname": "at1.vpnsecure.me",
+        "premium": true,
+        "ips": [
+          "185.236.202.181"
+        ]
+      },
+      {
+        "region": "Vienna",
+        "city": "Vienna",
+        "hostname": "at2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "91.151.16.17"
+        ]
+      },
+      {
+        "region": "Western Cape",
+        "city": "Cape Town",
+        "hostname": "za1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "102.165.60.248"
+        ]
+      },
+      {
+        "region": "Île-de-France",
+        "city": "Paris",
+        "hostname": "fr1.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "87.98.158.99"
+        ]
+      },
+      {
+        "region": "Île-de-France",
+        "city": "Paris",
+        "hostname": "fr2.vpnsecure.me",
+        "premium": false,
+        "ips": [
+          "87.98.158.117"
+        ]
+      }
+    ]
+  },
   "vpnunlimited": {
     "version": 1,
     "timestamp": 1629490858,

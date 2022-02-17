@@ -22,6 +22,7 @@ func (a AllServers) GetCopy() (servers AllServers) {
 	servers.Purevpn.Servers = a.GetPurevpn()
 	servers.Surfshark.Servers = a.GetSurfshark()
 	servers.Torguard.Servers = a.GetTorguard()
+	servers.Vpnsecure.Servers = a.GetVpnsecure()
 	servers.VPNUnlimited.Servers = a.GetVPNUnlimited()
 	servers.Vyprvpn.Servers = a.GetVyprvpn()
 	servers.Windscribe.Servers = a.GetWindscribe()
@@ -215,6 +216,18 @@ func (a *AllServers) GetTorguard() (servers []TorguardServer) {
 	}
 	servers = make([]TorguardServer, len(a.Torguard.Servers))
 	for i, serverToCopy := range a.Torguard.Servers {
+		servers[i] = serverToCopy
+		servers[i].IPs = copyIPs(serverToCopy.IPs)
+	}
+	return servers
+}
+
+func (a *AllServers) GetVpnsecure() (servers []VpnsecureServer) {
+	if a.Vpnsecure.Servers == nil {
+		return nil
+	}
+	servers = make([]VpnsecureServer, len(a.Vpnsecure.Servers))
+	for i, serverToCopy := range a.Vpnsecure.Servers {
 		servers[i] = serverToCopy
 		servers[i].IPs = copyIPs(serverToCopy.IPs)
 	}
