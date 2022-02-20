@@ -1,11 +1,13 @@
 package vpnsecure
 
 import (
+	"fmt"
 	"strconv"
 
 	"github.com/qdm12/gluetun/internal/configuration/settings"
 	"github.com/qdm12/gluetun/internal/constants"
 	"github.com/qdm12/gluetun/internal/models"
+	"github.com/qdm12/gluetun/internal/openvpn/parse"
 	"github.com/qdm12/gluetun/internal/provider/utils"
 )
 
@@ -63,7 +65,12 @@ func (v *Vpnsecure) BuildConf(connection models.Connection,
 
 	lines = append(lines, utils.WrapOpenvpnCA(constants.VpnsecureCA)...)
 	lines = append(lines, utils.WrapOpenvpnCert(constants.VpnsecureCert)...)
-	lines = append(lines, utils.WrapOpenvpnEncryptedKey(constants.VpnsecureEncKey)...)
+
+	encryptedKeyData, err := parse.ExtractEncryptedPrivateKey([]byte(*settings.EncryptedPrivateKey))
+	if err != nil {
+		return nil, fmt.Errorf("encrypted private key is not valid: %w", err)
+	}
+	lines = append(lines, utils.WrapOpenvpnEncryptedKey(encryptedKeyData)...)
 
 	lines = append(lines, "")
 
