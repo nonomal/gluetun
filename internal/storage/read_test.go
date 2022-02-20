@@ -24,8 +24,7 @@ func Test_extractServersFromBytes(t *testing.T) {
 			err: errors.New("cannot decode versions: unexpected end of JSON input"),
 		},
 		"empty JSON": {
-			b:   []byte("{}"),
-			err: errors.New("cannot decode servers for provider: Cyberghost: unexpected end of JSON input"),
+			b: []byte("{}"),
 		},
 		"different versions": {
 			b: []byte(`{}`),
