@@ -105,7 +105,7 @@ func extractFromHTMLBlock(htmlBlock string) (server models.VpnsecureServer, ok b
 	if host == "" {
 		return server, false
 	}
-	server.Hostname = host + ".vpnsecure.me"
+	server.Hostname = host + ".isponeder.com"
 
 	server.City = regexTrimPrefixSuffix(htmlBlock, cityRegex,
 		"<div><span>City:</span> <strong>", "</strong></div>")

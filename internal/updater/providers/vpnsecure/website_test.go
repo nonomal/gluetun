@@ -51,7 +51,7 @@ func Test_fetchServers(t *testing.T) {
 			`)),
 			servers: []models.VpnsecureServer{
 				{
-					Hostname: "host.vpnsecure.me",
+					Hostname: "host.isponeder.com",
 					City:     "City",
 					Region:   "Region",
 					Premium:  true,
@@ -184,7 +184,7 @@ func Test_parseHTML(t *testing.T) {
 				`,
 			servers: []models.VpnsecureServer{
 				{
-					Hostname: "host.vpnsecure.me",
+					Hostname: "host.isponeder.com",
 					City:     "City",
 					Region:   "Region",
 					Premium:  true,
@@ -212,13 +212,13 @@ func Test_parseHTML(t *testing.T) {
 				`,
 			servers: []models.VpnsecureServer{
 				{
-					Hostname: "host.vpnsecure.me",
+					Hostname: "host.isponeder.com",
 					City:     "City",
 					Region:   "Region",
 					Premium:  true,
 				},
 				{
-					Hostname: "host2.vpnsecure.me",
+					Hostname: "host2.isponeder.com",
 					City:     "City 2",
 					Region:   "Region 2",
 				},
@@ -269,7 +269,7 @@ func Test_extractFromHTMLBlock(t *testing.T) {
 				</dl>
 				`,
 			server: models.VpnsecureServer{
-				Hostname: "host.vpnsecure.me",
+				Hostname: "host.isponeder.com",
 				City:     "City",
 				Region:   "Region",
 				Premium:  true,
